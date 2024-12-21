@@ -1,0 +1,24 @@
+[package]
+name = "project-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "default"
+path = "src/default.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "another"
+path = "src/bin/another-executable.rs"
+test = true
+bench = false
+
+[[example]]
+name = "exmpl"
+path = "examples/example.rs"
+
+[dependencies]
